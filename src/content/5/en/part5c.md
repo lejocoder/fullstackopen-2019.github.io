@@ -20,7 +20,8 @@ In addition to Jest, we also need another testing library that will help us rend
 Let's install the library with the command:
 
 ```js
-npm install --save-dev @testing-library/react jest-dom
+npm install --save-dev @testing-library/react 
+npm install --save-dev @testing-library/jest-dom
 ```
 
 
@@ -53,7 +54,7 @@ The first test verifies that the component renders the contents of the note:
 
 ```js
 import React from 'react'
-import 'jest-dom/extend-expect'
+import '@testing-library/jest-dom/extend-expect'
 import { render, cleanup } from '@testing-library/react'
 import Note from './Note'
 
